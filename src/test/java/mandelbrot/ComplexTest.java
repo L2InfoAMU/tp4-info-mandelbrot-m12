@@ -24,7 +24,7 @@ public class ComplexTest {
         assertEquals(1., oneMinusI.real, Helpers.EPSILON);
         assertEquals(-1., oneMinusI.imaginary, Helpers.EPSILON);
         assertEquals(2., two.real, Helpers.EPSILON);
-        assertEquals(0., two.imaginary, Helpers.EPSILON);
+      assertEquals(0., two.imaginary, Helpers.EPSILON);
     }
 
     @Test
