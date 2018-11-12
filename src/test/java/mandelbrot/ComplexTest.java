@@ -134,3 +134,4 @@ public class ComplexTest {
         assertEquals(c1.hashCode(), c2.hashCode());
     }
 }
+
