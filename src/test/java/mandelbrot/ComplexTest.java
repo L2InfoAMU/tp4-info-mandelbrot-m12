@@ -82,13 +82,7 @@ public class ComplexTest {
         assertThrows(ArithmeticException.class, ()->Complex.ZERO.reciprocal());
     }
 
-    @Test
-    void testSubstract(){
-        assertEquals(minusOne, Complex.ZERO.subtract(Complex.ONE));
-        assertEquals(oneMinusI, Complex.ONE.subtract(Complex.I));
-        assertEquals(new Complex(real-1,imaginary-1),
-                new Complex(real, imaginary).subtract(onePlusI));
-    }
+
 
     @Test
     void testDivide(){
@@ -134,6 +128,9 @@ public class ComplexTest {
         assertEquals(c1.hashCode(), c2.hashCode());
     }
 
+
+    // tache 2 creation des tests :
+
     @Test
     void testReal() {
         assertEquals(real, Complex.real(real));}
@@ -144,6 +141,13 @@ public class ComplexTest {
         assertEquals(2 , Complex.ONE.add(Complex.ONE));
     }
 
+    @Test
+    void testSubstract(){
+        assertEquals(minusOne, Complex.ZERO.subtract(Complex.ONE));
+        assertEquals(oneMinusI, Complex.ONE.subtract(Complex.I));
+        assertEquals(new Complex(real-1,imaginary-1),
+                new Complex(real, imaginary).subtract(onePlusI));
+    }
 
 }
 
